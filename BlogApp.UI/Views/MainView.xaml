@@ -1,0 +1,23 @@
+﻿<Window x:Class="BlogApp.UI.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlogApp.UI.Views"
+        xmlns:vm="clr-namespace:BlogApp.UI.ViewModels"
+        xmlns:p="clr-namespace:BlogApp.UI.Views.PageViews"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="BlogApp" Height="450" Width="860"
+        >
+    <Window.DataContext>
+        <vm:MainViewModel></vm:MainViewModel>
+    </Window.DataContext>
+    <Grid>
+        <ContentControl>
+            <ContentControl.Content>
+                <p:MainPageView></p:MainPageView>
+            </ContentControl.Content>
+        </ContentControl>
+    </Grid>
+</Window>

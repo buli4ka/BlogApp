@@ -1,0 +1,10 @@
+﻿<Application x:Class="BlogApp.UI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BlogApp.UI"
+             xmlns:locatorNS="clr-namespace:BlogApp.UI.Infrastructure"
+             StartupUri="Views/MainView.xaml">
+    <Application.Resources>
+        <locatorNS:VMLocator x:Key="locator"></locatorNS:VMLocator>
+    </Application.Resources>
+</Application>
